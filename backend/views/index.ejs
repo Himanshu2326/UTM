@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/header'); %>
+</head>
+
+<body>
+
+    <h1 class="text-center text-white py-3">UTM Tracking Dashboard</h1>
+
+    <div class="container mt-5">
+
+        <div class="filters my-4 d-flex justify-content-between align-items-end">
+
+            <div>
+                <h5>Filter Options:</h5>
+                <form id="filter-form" class="checkbox-filters">    
+                    <label>
+                        <input type="checkbox" class="check-filter" disabled id="source-checkbox" checked> Source
+                    </label>
+                    <label>
+                        <input type="checkbox" class="check-filter" id="medium-checkbox" checked> Medium
+                    </label>
+                    <label>
+                        <input type="checkbox" class="check-filter" id="campaign-checkbox" > Campaign
+                    </label>
+
+                    <!-- <label>
+                        <input type="checkbox" class="check-filter" id="term-checkbox" > Term
+                    </label> -->
+                </form>
+            </div>
+
+
+             <!-- Dropdown Filters for Month and Year -->
+    <!-- <div class="dropdown-filters mt-3">
+        <select id="month-filter" class="dynamic-filter">
+            <option value="">Select Month</option>
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
+        <select id="year-filter" class="dynamic-filter">
+            <option value="">Select Year</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+        </select>
+        <button id="view-button" class="btn btn-primary">View</button>
+    </div>
+                 -->
+
+            <!-- Dropdown Filters for Dynamic Values -->
+            <!-- <div class="dropdown-filters mt-3">
+                <select id="source-filter" class="dynamic-filter">
+                    <option value="">Sources</option>
+                </select>
+                <select id="medium-filter" class="dynamic-filter">
+                    <option value="">Mediums</option>
+                </select>
+            </div> -->
+        </div>
+
+        <!-- UTM Table -->
+        <div class="table-responsive">
+            <table class="table table-bordered mt-4" id="utm-table">
+                <thead id="utm-table-header" class="table-dark">
+                    <!-- Dynamic header rows will be populated here -->
+                </thead>
+                <tbody id="utm-data">
+                    <!-- Dynamic rows will be populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- JavaScript File with Render Logic -->
+    <%- include('partials/footer'); %>
+</body>
+
+</html>

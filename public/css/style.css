@@ -1,0 +1,161 @@
+/* frontend/style.css */
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 30px;
+  background: #212529;
+  box-shadow: 0px 3px 4px -3px #212529;
+
+}
+
+th {
+  text-transform: capitalize;
+}
+
+.table {
+  background-color: #ffffff;
+}
+
+.table th {
+  white-space: nowrap;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+
+/* Vertical scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+  border-radius: 2px;
+}
+
+/* Horizontal scrollbar */
+::-webkit-scrollbar {
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+  border-radius: 2px;
+}
+
+
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 40px;
+  height: 16px;
+  margin-left: 0px;
+  background-color: #eaf9f8a3;
+  box-shadow: 0px 0px 1px 0.5px #212529;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 14.5px;
+  height: 14px;
+  background-color: #212529;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  transition: transform 0.3s ease;
+}
+
+
+input[type="checkbox"]:checked {
+  background-color: #212529;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: translateX(24px);
+  background-color: #fff;
+}
+
+
+input[type="checkbox"]:disabled::before {
+  content: "";
+  width: 14.5px;
+  height: 14px;
+  background-color: #bebebe;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  transition: transform 0.3s ease;
+}
+
+
+input[type="checkbox"]:disabled {
+  background-color: #474747;
+}
+
+
+
+#filter-form label {
+  display: inline-flex;
+  align-items: center;
+}
+
+
+#filter-form label input {
+  margin-right: 7px;
+}
+
+
+.dynamic-filter {
+  font-size: 15px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  padding: 2px 10px;
+  box-shadow: 0px 0px 1px 1px #000;
+  width: fit-content;
+}
+
+.total-field {
+  background: #282d31 !important;
+}
+
+.total-value {
+  background: #f6f6f6 !important;
+}
+
+
+
+
+
